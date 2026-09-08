@@ -14,7 +14,7 @@
         }
         main{
             background-color: #FF8513;
-            color:black 
+            color:black;
             text-align: center;
             max-width: 500px;
             margin: auto;
@@ -29,10 +29,19 @@
      <h1>TV Hefesto</h1>
     <img src="Gemini_Generated_Image_e7yh4ie7yh4ie7yh-removebg-preview.png" alt="Bbokari usando camiseta do acampamento meio-sangue, óculos de aviação em estilo pixelado">
         <p>Acompanhe para receber todas as atualizações sobre o caso entre Afrodite e Ares.</p>
+        <button>🏛 <span>0</span> </button>
     </header>
     <main>
         <p>Por: Hefesto<p>
         <p>Às vésperas do solstício e da guerra, a deusa do amor e o deus da guerra deixam Annabeth Chase, filha de Atena, e Perseu Jackson, filho de Poseidon, para morrerem no parque Waterland no brinquedo Thrill Ride O' Love.
             As crianças foram perspicazes e conseguiram escapar vivas, mas a pergunta que não quer calar é: será que Atena e Poseidon ficariam felizes ao saberem disso? Atena, com certeza, Poseidon, já não sabemos.
     </main>
+    <script>
+        const botao = document.querySelector("button");
+        botao.addEventListener("click", botaoClicado);
+        function botaoClicado(){
+            let texto = botao.querySelector("span");
+            texto.textContent++;
+        }
+    </script>
 </html>
